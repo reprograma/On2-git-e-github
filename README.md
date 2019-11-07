@@ -1,49 +1,77 @@
-# Git, GitHub e linha de comando
+# Linha de comando, Git e GitHub
 
-* [O que é Git?](#o-que-é-git)
-* [Por que o Git é importante?](#por-que-o-git-é-importante)
-* [O que é GitHub?](#o-que-é-github)
-* [Por que o GitHub é importante?](#por-que-o-github-é-importante)
 * [O que é linha de comando?](#o-que-é-linha-de-comando)
 * [Por que a linha de comando é importante?](#por-que-a-linha-de-comando-é-importante)
-* [O que é GitHub Desktop?](#o-que-é-github-desktop)
-* [Por que o GitHub Desktop é importante?](#por-que-o-github-desktop-é-importante)
 * [Comandos básicos do terminal](#comandos-básicos-do-terminal)
-* [Começando com o Git](#comecando-com-o-git)
+* [O que é Git?](#o-que-é-git)
+* [Por que o Git é importante?](#por-que-o-git-é-importante)
+* [O que é Git Bash e por que é necessário?](#o-que-é-gitbash)
+* [Instalação do Git](#instalacao)
+* [Configurações iniciais do Git](#config-inicial)
+* [Dicionário de Git](#dicionario-de-git)
+* [Do local para um remoto](#local-remote)
 * [Fluxo do git](#fluxo-do-git)
-* [Instalando/verificando se o Git está instalado](#instalandoverificando-se-o-git-está-instalado)
+* [Branch](#branch)
+* [Merge](#merge)
+* [Pull request](#pull-request)
+* [O que é GitHub?](#o-que-é-github)
+* [Por que o GitHub é importante?](#por-que-o-github-é-importante)
 * [Formas de trabalhar com o Git/GitHub](#formas-de-trabalhar-com-o-gitgithub)
 * [Pra não esquecer:](#pra-nao-esquecer)
 * [GitHub Pages](#github-pages)
-* [Branch](#branch)
-* [Merge](#merge)
-* [Fork](#fork)
-* [Pull request](#pull-request)
 * [Como configurar a sua conta de GitHub na sua máquina](#como-configurara-a-sua-conta-de-GitHub-na-sua-máquina)
+* [Fork](#fork)
 * [Links com mais conteúdo para consulta](#links-com-mais-conteúdo-para-consulta)
 
 ***
 
+### O que é linha de comando?
+![Mockup](imgs/terminal.jpg)
+
+É aquela tela preta que aparece nos filmes, normalmente com alguém hackeando algum sistema.
+Mexer com o terminal assusta um pouco porque ele não é nem um pouco visual. Mas é muito simples mexer nele.
+Sabe quando a gente arrasta arquivos para uma pasta ou cria uma pasta nova? No terminal você faz tudo isso também, mas sem interface gráfica. A gente insere comandos, e ele executa.
+
+### Por que a linha de comando é importante?
+Na linha de comando você controla melhor o que está rolando com o seu computador - inclusive o versionamento. O git é sempre usado através de linha de comando. (O GitHub tem ferramentas visuais para uso do Git, mas é importante saber se virar pela linha de comando)
+
+***
+
+### Comandos básicos do terminal
+
+Esses comandos servem para para listar arquivos e navegar entre pastas dentro do computador.
+
+```
+ls - Listar (ele traz uma lista de tudo o que está naquela pasta - documentos, outras pastas, etc)
+pwd - Present working directory (onde estou?) Ele traz todo o caminho onde você está (em que pasta e onde essa pasta fica)
+cd - change directory (use para se locomover entre as pastas)
+cd ~ - volta para a pasta raiz
+cd . - volta uma pasta acima
+cd nome-da-pasta - para entrar em uma pasta específica (você precisa conseguir enxergar ela quando listar os arquivos)
+whoami - "quem sou eu?" identifica o usuário que está mexendo no sistema.
+```
+
+***
+
 ### O que é Git?
-![Mockup](images/git.png)
+![Mockup](imgs/git.png)
 
 É uma ferramenta de controle de versão de código, criado pelo mesmo desenvolvedor do Linux.
 Com o GIT podemos desenvolver projetos colaborativos, onde outras pessoas podem trabalhar simultaneamente no mesmo código sem riscos de perdermos nada do nosso trabalho. Imagina 3 pessoas remotas trabalhando no mesmo arquivo sem dar errado?
-Com o Git também conseguimos ter um histórico de tudo que foi alterado nos arquivos ao longo do tempo, além de mostrar quem foi o autor da mudança.
 Se formos utilizar um exemplo para exemplificar o Git, podemos dizer que ele usa a mesma lógica do Google Drive. Várias pessoas trabalhando simultaneamente no mesmo arquivo, adicionando e removendo conteúdos, além de termos a opção de consultar o histórico do que e quando foi modificado, podendo restaurar versões anteriores.
 
 ***
 
 ### Por que o Git é importante?
 
-* Organização: O Git cria uma timeline com tudo que aconteceu desde o início do projeto. Tudo que foi adicionado, removido, e quem foi o autor.
+* Organização: O Git cria uma timeline com tudo que aconteceu desde o início do projeto, contendo informações detalhadas do que foi modificado (arquivo), o autor da modificação (quem) e o motivo da alteração (mensagem)
 * Colaboração: Facilita MUITO o trabalho em equipe (entender o que foi feito, onde parou, quem fez o que).
 * Segurança: Se algo der errado, você pode resgatar uma versão anterior, além  de ter o seu projeto salvo em um lugar seguro.
 
 ***
 
 ### O que é GitHub?
-![Mockup](images/github.png)
+![Mockup](imgs/github.png)
 
 É uma espécie de rede social muito utilizada principalmente por desenvolvedores, onde você pode publicar e compartilhar todos os seus projetos pessoais e particulares, além de colaborar com projetos de pessoas e empresas de todo o mundo.
 É uma forma mais visual de trabalhar com o Git, pois possui uma interface gráfica e também apps para desktop.
@@ -55,50 +83,42 @@ Resumidamente: Você trabalha na sua máquina e salva versões do seu código no
 ***
 
 ### Por que o GitHub é importante?
-* Portfólio - É um site seguro para guardar e mostrar seus projetos. Não é incomum as empresas pedirem apenas seu GitHub antes de uma entrevista de emprego.
+* Portfólio: É um site seguro para guardar e mostrar seus projetos. Quase sempre as empresas olham seu GitHub antes de uma entrevista de emprego.
 * Organização - Permite que todo mundo trabalhe no mesmo projeto (seja um projeto da sua empresa ou um Open Source).
 * Ferramentas - Porque oferece funcionalidades extras ao git, como interface visual, documentação, bug tracking, feature requests, pull requests, etc.
 * Versatilidade: Você pode guardar qualquer tipo de arquivo no git/Github, não necessariamente código. Por exemplo, essa aula que estamos vendo. O Github utiliza uma linguagem chamada [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), que permite criar listas, links, ancôras, adicionar imagens, vídeos, gifs...
 
 ***
 
-### O que é linha de comando?
-![Mockup](images/terminal.png)
-
-É aquela tela preta que aparece nos filmes, normalmente com alguém hackeando algum sistema.
-Mexer com o terminal assusta um pouco porque ele não é nem um pouco visual. Mas é muito simples mexer nele.
-Sabe quando a gente arrasta arquivos para uma pasta ou cria uma pasta nova? No terminal você faz tudo isso também, mas sem interface gráfica. A gente insere comandos, e ele executa.
-
-### Por que a linha de comando é importante?
- Na linha de comando você controla melhor o que está rolando com o seu computador - inclusive o versionamento. O git é sempre usado através de linha de comando. (O GitHub tem ferramentas visuais para uso do Git, mas é importante saber se virar pela linha de comando)
+### O que é Git Bash e por que é necessário?
+É um software para utilizar as linhas de comando do Git além de alguns comandos Unix, necessário principalmente no Windows, já que inicialmente o Git foi desenvolvido para o Linux.
 
 ***
 
-### O que é GitHub Desktop?
-É uma ferramenta visual para utilizar o Git/GitHub diretamente no seu computador. Você pode baixar uma cópia gratuita na sua máquina e utilizar todos os comandos do Git sem a linha de comando.
 
-### Por que o GitHub Desktop é importante?
-Por ter uma interface visual, a curva de aprendizado do Git com essa ferramenta é menor. Ela também faz com quem está iniciando se sinta mais seguro ao trabalhar com o Git. Porém é importante aprender bem como o Git funciona e utiliza-la como ferramenta de apoio.
+### Instalação do Git 
+
+- Baixar o Git pelo site: https://git-scm.com/downloads
+
+- Instalar o arquivo `Git-2.24.0-32-bit.exe`
+
+- Abrir o Git Bash
 
 ***
 
-### Comandos básicos do terminal
+### Configurações iniciais do Git
 
-Esses comandos servem para para listar arquivos e navegar entre pastas dentro do computador.
+Digitando (git status) na linha de comando, várias instruções e sugestões do git devem aparecer.
+Após a instalação, é preciso configurá-lo com seus dados de acesso (os mesmos do GitHub, viu?!). Então, no terminal, digite os comandos abaixo:
 
 ```
-ls - LISTAR (ele traz uma lista de tudo o que está naquela pasta - documentos, outras pastas, etc) 
-pwd - Present working directory (onde estou?) Ele traz todo o caminho onde você está (em que pasta e onde essa pasta fica)
-cd - change directory (use para se locomover entre as pastas)
-cd ~ - volta para a raiz
-cd . - volta uma pasta acima
-cd nome-da-pasta - para entrar em uma pasta (você precisa conseguir enxergar ela quando listar os arquivos)
-whoami - "quem sou eu?" identifica o usuário que está mexendo no sistema.
+git config --global user.name “Fulana Silva"
+git config --global user.email “fulana.silva@gmail.com”
 ```
 
 ***
 
-### Começando com o Git
+### Dicionário de Git
 
 Algumas palavras novas que vamos usar com o Git/GitHub
 
@@ -106,44 +126,23 @@ Algumas palavras novas que vamos usar com o Git/GitHub
 
 * Controle de versão: É a proposta básica do Git, um histórico de tudo o que aconteceu com o(s) arquivo(s) que você está trabalhando. Por exemplo, quando você salva um arquivo do Word no seu computador, você perde todas as versões anteriores, ficando somente com o conteúdo atual. Com o Git você tem todas as versões antigas dos arquivos.
 
-* Commit: Quando você faz um commit com o Git, você está criando um controle de versão (histórico) daquele arquivo e criando uma etiqueta para facilitar o entendimento do que foi salvo naquele momento.
+* Commit: A "etiqueta" que você está criando daquele arquivo para o controle de versão (histórico), com o que (mensagem) e quando (data/hora) do que foi salvo.
 
-* Pull: O pull serve para se comunicar entre a sua máquina e o repositório remoto. Esse comando faz uma cópia do repositório remoto e baixa ele para a sua máquina.
+* Pull: "Puxar" em inglês. O pull serve para "puxar" (trazer) uma parte (ou tudo) do repositório remoto, copiando para seu repositório local (sua máquina).
 
-* Push: O push também serve para se comunicar entre a sua máquina e o repositório remoto. Esse comando faz uma cópia do repositório local e envia ele para o repositório remoto.
+* Push: "Empurrar" em inglês. Esse comando faz uma cópia de uma parte (ou tudo) do repositório local e "empurra" (envia) ele para o repositório remoto.
 
-* Clone: O comando clone faz exatamente o que ele sugere: uma cópia exata do arquivo, que você vai baixar do repositório remoto para a sua máquina.
-
-***
-
-### Fluxo do git
-![Mockup](images/flow.png)
-
-Tudo isso está acontecendo apenas localmente no seu computador!
-
-Cada etiqueta vai gerando um ponto na nossa timeline. Essa etiqueta se chama commit, e com essa pequena descrição fica mais fácil se achar entre as versões.
-
-![Mockup](images/commit.png)
+* Clone: O comando clone faz exatamente o que ele sugere: uma cópia exata que você vai baixar do repositório remoto para a sua máquina.
 
 ***
 
-### Instalando/verificando se o Git está instalado
+### Do local para um remoto
+![Mockup](imgs/fluxo.jpg)
 
-Digite git status na linha de comando, e várias instruções e sugestões do git devem aparecer.
- Comandos para usar uma vez na vida: (assim o git sabe quem está fazendo as alterações) 
+Ao alterarmos o código em um arquivo, além de salvar normalmente como outros programas, devemos "adicioná-lo" (add) em uma área temporária chamada "stage area". 
+Após adicionar todos os arquivos que você modificou, você deve fazer o famoso (commit) para identificar o conjunto que você alterou, escrevendo uma mensagem, por exemplo: "adicionei botão de ajuda", assim enviando para o diretório local.
+Enfim você enviará (push) as suas mudanças para o diretório remoto.
 
-```
-git config --global user.name “Patricia Tonella" 
-git config --global user.email “patricia.tonella@gmail.com”
-```
-
-Para remover o usuário
-```
-git config --global --unset-all user.name "Patricia Tonella"
-git config --global --unset-all user.email “patricia.tonella@gmail.com”
-```
-
-***
 
 ### Formas de trabalhar com o Git/GitHub
 
@@ -196,27 +195,15 @@ A partir de agora, sempre que vocês modficarem/adicionarem/removerem arquivos n
 
 ***
 
-### GitHub Pages
-Quem tem uma conta no GitHub pode ter acesso a uma hospedagem gratuita para os projetos que estão com o código hospedado no GitHub.
-
-1) Criar um repositório no GitHub: username.github.io (username deve ser o seu username do GitHub)
-2) Clonar repositório na sua máquina
-3) Add arquivos
-4) Fazer o commit
-5) Push para o GitHub
-6) Acessar https://username.github.io
-
-***
-
 ### Branch
-O git tem uma linha do tempo principal chamada master, que é branch base criada junto com cada repositório. Quando trabalhamos sozinhas em um repositório não tem problema trabalharmos sempre no master, mas quando começamos a trabalhar com outras pessoas em um projeto, surge a necessidade de ter uma cópia do projeto que seja livre de bugs e que esteja funcionando 100%. Essa cópia é o master.
+O git tem uma linha do tempo principal chamada master, que é a base criada junto com cada repositório. Quando trabalhamos sozinhas em um repositório não tem problema trabalharmos sempre no master, mas quando começamos a trabalhar com outras pessoas em um projeto, surge a necessidade de ter uma cópia do projeto que seja livre de bugs e que esteja funcionando 100%. Essa cópia é a master.
 
-A partir do código que está no master podemos gerar outras cópias para serem modificadas e depois devolvidas para o master.
+A partir do código que está na master podemos gerar outras cópias para serem modificadas e depois devolvidas para a master.
 
 Essas cópias são chamadas de branch.
 
-![Mockup](images/master.png)
-![Mockup](images/branch.png)
+![Mockup](imgs/master.png)
+![Mockup](imgs/branch.png)
 
 
 Comando para criar um novo branch:
@@ -230,19 +217,27 @@ Comando para listar todos os branches locais:
 
 ***
 
+### Fluxo do git
+
+![Mockup](imgs/commit.png)
+
+
+
+***
+
 ### Merge
 
 Depois de criar um branch e fazer alterações no código, você precisa devolver essa sua cópia para o master. Você faz isso com o comando merge.
 
 Merge é mesclar um branch dentro de outro, juntando as alterações que já estavam no código do branch base com as alterações do outro branch.
 
-![Mockup](images/merge.png)
-![Mockup](images/merged.png)
+![Mockup](imgs/merge.png)
+![Mockup](imgs/merged.png)
 
 Se duas ou mais pessoas mexerem no mesmo arquivo simultaneamente, isso pode gerar conflito de código.
 O Git consegue resolver alguns desses conflitos automaticamente, mas em outros casos o desenvolvedor que está fazendo o merge tem que resolver esse conflito e depois continuar com o merge.
 
-![Mockup](images/conflict.png)
+![Mockup](imgs/conflict.png)
 
 
 Comando para fazer merge de um branch em outro:
@@ -269,6 +264,18 @@ https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
 ***
 
+### GitHub Pages
+Quem tem uma conta no GitHub pode ter acesso a uma hospedagem gratuita para os projetos que estão com o código hospedado no GitHub.
+
+1) Criar um repositório no GitHub: username.github.io (username deve ser o seu username do GitHub)
+2) Clonar repositório na sua máquina
+3) Add arquivos
+4) Fazer o commit
+5) Push para o GitHub
+6) Acessar https://username.github.io
+
+***
+
 ### Fork
 
 Um fork é uma cópia de um projeto de outra pessoa dentro do seu GitHub. É como quando você faz o clone de um repositório do seu GitHub pra sua máquina.
@@ -282,6 +289,7 @@ https://github.com/octocat/Spoon-Knife/pulls
 
 ### Links com mais conteúdo para consulta
 
+Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
 Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
 Curso Gratuito - https://www.udemy.com/git-e-github-para-iniciantes/
 Live Mastertech “Guia Completo de Git” - https://www.youtube.com/watch?v=BWjcsuxFUmQ
