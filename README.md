@@ -415,8 +415,6 @@ Isso significa que o código da sua branch **ex-aula-seuNome** estará replicado
 Merge é "mesclar" um branch dentro de outro, juntando as alterações que já estavam no código do branch base com as alterações do outro branch.
 
 ![Mockup](imgs/merge.png)
-![Mockup](imgs/merged.png)
-
 Comando para fazer merge de um branch em outro:
 
 `git merge nome-do-branch-que-vai-ser-mergeado`
