@@ -1,12 +1,11 @@
 # Git e GitHub
 
-* [O que é linha de comando e por que é importante?](#o-que-é-linha-de-comando-e-por-que-é-importante)
-* [Comandos básicos do terminal](#comandos-básicos-do-terminal)
-* [O que é Git e por que é importante?](#o-que-é-git)
-* [O que é Git Bash e por que é importante?](#o-que-é-gitbash)
+* [O que é linha de comando e por que é importante?](#linha-comando)
+* [Comandos básicos do terminal](#comandos-basicos)
+* [O que é Git e por que é importante?](#git)
+* [O que é Git Bash e por que é importante?](#gitbash)
 * [Instalação do Git](#instalacao)
-* [Configurações iniciais do Git](#config-inicial)
-* [Dicionário de Git](#dicionario-de-git)
+* [Configurações de autoria](#config-autoria)
 * [De: Local - Para: Remoto](#local-remote)
 * [Fluxo do git](#fluxo-do-git)
 * [Branch](#branch)
@@ -15,14 +14,12 @@
 * [O que é GitHub e por que é importante?](#o-que-é-github)
 * [Formas de trabalhar com o Git/GitHub](#formas-de-trabalhar-com-o-gitgithub)
 * [Pra não esquecer:](#pra-nao-esquecer)
-* [GitHub Pages](#github-pages)
-* [Como configurar a sua conta de GitHub na sua máquina](#como-configurara-a-sua-conta-de-GitHub-na-sua-máquina)
-* [Fork](#fork)
-* [Links com mais conteúdo para consulta](#links-com-mais-conteúdo-para-consulta)
+* [Etapas para trabalhar em um projeto distribuído](#etapas-projeto)
+* [Extras](#extras)
 
 ***
 
-### O que é linha de comando e por que é importante?
+### O que é linha de comando e por que é importante? <a name="linha-comando"></a>
 ![Mockup](imgs/terminal.jpg)
 
 É aquela tela preta que aparece nos filmes, normalmente com alguém hackeando algum sistema.
@@ -33,7 +30,7 @@ Na linha de comando você controla melhor o que está rolando com o seu computad
 
 ***
 
-### Comandos básicos do terminal
+### Comandos básicos do terminal <a name="comandos-basicos"></a>
 
 Esses comandos servem para para listar arquivos e navegar entre pastas dentro do computador.
 
@@ -49,7 +46,7 @@ whoami - "quem sou eu?" identifica o usuário que está mexendo no sistema.
 
 ***
 
-### O que é Git e por que é importante?
+### O que é Git e por que é importante? <a name="git"></a>
 ![Mockup](imgs/git.png)
 
 É uma ferramenta de controle de versão de código, criado pelo mesmo desenvolvedor do Linux.
@@ -63,12 +60,12 @@ Se formos utilizar um exemplo para exemplificar o Git, podemos dizer que ele usa
 
 ***
 
-### O que é Git Bash e por que é importante?
+### O que é Git Bash e por que é importante? <a name="gitbash"></a>
 É um software para utilizar as linhas de comando do Git além de alguns comandos Unix, necessário principalmente no Windows, já que inicialmente o Git foi desenvolvido para o Linux.
 
 ***
 
-### Instalação do Git 
+### Instalação do Git <a name="instalacao"></a>
 1) Baixar o Git pelo site: https://git-scm.com/downloads
 2) Instalar o arquivo `Git-2.24.0-32-bit.exe`
 3) Abrir o Git Bash
@@ -76,7 +73,7 @@ Se formos utilizar um exemplo para exemplificar o Git, podemos dizer que ele usa
 
 ***
 
-### Configurações de autoria
+### Configurações de autoria <a name="config-autoria"></a>
 Após a instalação, é preciso configurá-lo com seus dados de acesso (os mesmos do GitHub, viu?). Caso utilize o computador compartilhado com outras pessoas que também usam Git, você deverá fazer essa etapa de verificação sempre que for codar. Caso seja a única pessoa que utiliza o Git neste computador, você fará isso uma única vez.
 Então, no terminal, digite os comandos abaixo:
 
@@ -216,59 +213,6 @@ O Git estará de olho em tudo o que você alterar.
 
 ***
 
-### Branch
-O git tem uma linha do tempo principal chamada master, que é a base criada junto com cada repositório. Quando trabalhamos sozinhas em um repositório não tem problema trabalharmos sempre no master, mas quando começamos a trabalhar com outras pessoas em um projeto, surge a necessidade de ter uma cópia do projeto que seja livre de bugs e que esteja funcionando 100%. Essa cópia é a master.
-
-![Mockup](imgs/commit.png)
-
-A partir do código que está na master podemos gerar outras cópias para serem modificadas e depois devolvidas para a master. Essas cópias são chamadas de branch.
-As branches são normalmente criadas com objetivos pontuais: criar uma nova feature, consertar um bug, realizar testes, etc.
-
-![Mockup](imgs/branch.png)
-
-
-Comando para criar um novo branch:
-`git checkout -b nome-do-branch`
-
-Comando para trocar de branch:
-`git checkout nome-do-branch`
-
-Comando para listar todos os branches locais:
-`git branch`
-
-***
-
-### Merge
-
-Depois de criar um branch e fazer alterações no código, você precisa devolver essa sua cópia para o master. Você faz isso com o comando "merge".
-Merge é "mesclar" um branch dentro de outro, juntando as alterações que já estavam no código do branch base com as alterações do outro branch.
-
-![Mockup](imgs/merge.png)
-![Mockup](imgs/merged.png)
-
-Se duas ou mais pessoas mexerem no mesmo arquivo simultaneamente, isso pode gerar conflito de código.
-O Git consegue resolver alguns desses conflitos automaticamente, mas em outros casos o desenvolvedor que está fazendo o merge tem que resolver esse conflito e depois continuar com o merge.
-
-![Mockup](imgs/conflict.png)
-
-Comando para fazer merge de um branch em outro:
-
-`git merge nome-do-branch-que-vai-ser-mergeado`
-
-**Importante:** Quando você rodar esse comando, o merge do nome-do-branch-que-vai-ser-mergeado vai ser feito com o branch em que você está no momento
-
-Pra saber em qual branch você está: `git status`
-
-***
-
-### Pull request
-
-Quando você faz um fork de um projeto, ou quando você trabalha em uma empresa com mais desenvolvedores, é normal que as demais pessoas envolvidas no projeto façam um review do seu código antes de ele ir pro master, afinal você pode ter cometido algum erro no desenvolvimento, ou alguma parte do seu código pode ser melhorada.
-
-Um pull request é quando você quer fazer merge do seu código em outro branch, mas você precisa da autorização das outras pessoas envolvidas no projeto.
-
-***
-
 ### O que é GitHub e por que é importante?
 ![Mockup](imgs/github.png)
 
@@ -287,41 +231,6 @@ Resumidamente: Você trabalha na sua máquina e salva versões do seu código no
 
 ***
 
-### Formas de trabalhar com o Git/GitHub
-1) Baixar um projeto que está hospedado no GitHub para a nossa máquina ou
-2) Iniciar um projeto novo na minha máquina e subir para o GitHub
-
-***
-
-#### Baixar um projeto que está hospedado no GitHub para a nossa máquina
-1) Acessar o GitHub e criar uma conta gratuita.
-**Importante:** escolha bem seu nome de usuário, pois essa url vai ser muito utilizada durante a vida profissional.
-
-2) Acessar https://github.com/reprograma
-3) Acessar o repositório `github`
-4) Clicar no botão `Clone or download` e copiar a url https
-4) Navegar até a pasta aonde você vai fazer o clone do projeto
-5) `git clone url-que-vocês-copiaram`
-
-***
-
-#### Iniciar um projeto local e subir pro GitHub
-1) Navegar pela linha de comando até a pasta desejada
-2) Rodar o comando  git status. Provavelmente o Git não vai estar iniciado nessa pasta, então vamos rodar um comando para avisar para o Git começar a versionar essa pasta: `git init`
-4) Criar um repositório no GitHub (colocar o nome do projeto de vocês)
-5) Copiar a url do repositório (igual vocês fizeram no exemplo anterior)
-6) `git add .` (para adicionar todos os arquivos de uma vez) ou `git add caminho-do-arquivo`
-git `commit -m "Aqui você escreve uma mensagem que ajude quem estiver lendo a saber o que você adicionou/modificou nos arquivos"`
-7) `git remote add origin url-que-voces-copiaram-do-github`
-8) `git remote -v` (vai mostrar as urls, provavelmente duas)
-9) `git push origin master`
-
-Abrir o repositório no GitHub. Os arquivos que estavam na máquina de vocês agora devem estar salvos no GitHub 🎉
-Agora uma cópia do trabalho de vocês até agora está salvo no GitHub, e o Git está monitorando essa pasta.
-A partir de agora, sempre que vocês modficarem/adicionarem/removerem arquivos nessa pasta, o Git vai saber e  vai mostrar tudo o que foi modificado/adicionado/removido.
-
-***
-
 ### Pra não esquecer:
 (comandos que mais vamos usar)
 * `git status` (para ver a lista de arquivos modificados)
@@ -334,12 +243,192 @@ A partir de agora, sempre que vocês modficarem/adicionarem/removerem arquivos n
 
 ***
 
-### Como configurar a sua conta de GitHub na sua máquina
-https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+Simulando o trabalho de uma equipe no mesmo projeto.
+
+Faremos com este repositório aqui do GitHub.
+
+### Etapas para trabalhar em um projeto distribuído <a name="etapas-projeto"></a>
+	
+1. [Clonar o projeto](#ex-clone)
+
+2. [Criar uma branch nova](#ex-branch)
+
+3. [Fazer suas modificações na branch nova](#ex-coding)
+
+4. [Verificar alterações](#ex-diff)
+
+5. [Adicionar arquivos na área de preparação (staging area)](#ex-add)
+
+6. [Definir mensagem que descreve as alterações realizadas](#ex-commit)
+
+7. [Subir alteração da sua branch para o GitHub](#ex-push)
+
+8. [Verificar se sua branch aparece no GitHub](#ex-github)
+
+9. [Solicitar que sua alteração vá para a branch master (Criar pull request)](#ex-pull-request)
+
+10. [Aguardar aprovação do seu código](#ex-merge)
+
+**2. Criar uma branch nova** <a name="ex-branch"></a>
+
+Para trabalharmos em equipe, o git utiliza branches. *branch* significa galho, ramificação. A branch ***master*** equivale ao tronco principal da árvore do projeto. Quando trabalhamos sozinhas em um repositório não tem problema trabalharmos sempre na master, mas quando começamos a trabalhar com outras pessoas em um projeto, surge a necessidade de ter uma cópia do projeto que seja livre de bugs e que esteja funcionando 100%. Essa cópia é a master, que reflete em produção.
+
+![Mockup](imgs/commit.png)
+
+A partir do código que está na master podemos gerar outras cópias para serem modificadas e depois devolvidas para a master. Essas cópias são chamadas de branch.
+As branches são normalmente criadas com objetivos pontuais: criar uma nova feature, consertar um bug, realizar testes, etc.
+
+![Mockup](imgs/branch.png)
+
+* Listar quais branchs existem: 
+
+	```
+	git branch -a
+	```
+
+* Para criar uma nova com ***seuNome***, use o comando abaixo:
+
+	```
+	git branch nome-branch
+	```
+
+* Para sair da branch atual e ir para uma branch nova com ***seuNome***, use o comando abaixo:
+
+	```
+	git checkout -b nome-branch
+	```
+
+* Para apenas trocar de branch, use:
+
+	```
+	git checkout nome-branch
+	```
+
+A partir de agora, todas alterações feitas no projeto serão feitas somente na sua branch chamada ***seuNome***, evitando que você altere o projeto diretamente na branch ***master***
+
+![Mockup](imgs/branch-fofo.png)
+
+---
+
+**3. Fazer suas modificações na branch nova** <a name="ex-coding"></a>
+
+* Verificar no navegador (Chrome) como está o projeto. Abrir o arquivo `index.html` da pasta **exercicio-aula**
+
+* Fazer sua alteração no código
+
+* Verificar no navegador se as suas alterações estão conforme deseja
+
+* Voltar para o Git Bash (dentro da pasta desse projeto)
+
+---
+
+**4. Verificar alterações** <a name="ex-diff"></a>
+
+* Verificar alteraçoes pelo Git Bash
+
+	```
+	git diff
+	```
+
+* Este repositório já está rastreado, e por isso, já foi possível verificar as alterações pelo Git
+
+* Verificar o status
+
+	```
+	git status
+	```
+
+---
+
+**5. Adicionar arquivos na área de preparação (staging area)** <a name="ex-add"></a>
+
+* Adicionar as alterações para a área de preparação
+
+	```
+	git add index.html
+	```
+
+* Verificar status novamente
+
+	```
+	git status
+	```
+
+---
+
+**6. Definir mensagem que descreve as alterações realizadas** <a name="ex-commit"></a>
+
+* Adicionar mensagem de commit
+
+	```
+	git commit -m "Adicionando minha presença na aula"
+	```
+
+---
+
+**7. Subir alteração da sua branch para o GitHub** <a name="ex-push"></a>
+
+* Subir alteração para o repositório remoto
+
+	```
+	git push origin nome-branch
+	```
+
+* Verifique se sua branch aparece no GitHub** 
+
+---
+
+**8. Solicitar que sua alteração vá para a branch master (Criar pull request)** <a name="ex-pull-request"></a>
+
+Depois de criar um branch e fazer alterações no código, você precisa devolver essa sua cópia para o master. Ao trabalhar com mais desenvolvedores, é normal que as demais pessoas envolvidas no projeto revisem seu código antes de ele ir pra master, afinal você pode ter cometido algum erro no desenvolvimento, ou alguma parte do seu código pode ser melhorada.
+Um pull request é quando você quer fazer merge do seu código em outro branch, mas antes você precisará das revisão (review) de outras pessoas envolvidas no projeto.
+
+![Mockup](imgs/pr-tab.gif)
+![Mockup](imgs/create-pr.png)
+![Mockup](imgs/pr-form.png)
+
+---
+
+**9. Resolvendo conflitos**  <a name="ex-conflict"></a>
+
+Se duas ou mais pessoas mexerem no mesmo arquivo simultaneamente, isso pode gerar conflito de código.
+O Git consegue resolver alguns desses conflitos automaticamente, mas em outros casos o desenvolvedor que está fazendo o merge tem que resolver esse conflito e depois continuar com o merge.
+
+![Mockup](imgs/conflict.png)
+
+---
+
+**10. Aguardar aprovação do seu código** <a name="ex-wait"></a>
+
+As outras pessoas de sua equipe irão revisar seu código (***code review***) e aprovar seu ***pull request***.
+
+Isso significa que o código da sua branch **ex-aula-seuNome** estará replicado na branch **master**. A branch **ex-aula-seuNome** foi fundida (***merged***) com a branch **master**
+
+<img src="https://media.giphy.com/media/y8Mz1yj13s3kI/giphy.gif">
+
+---
+
+**11. Caso não precise de aprovação (Merge)** <a name="ex-merge"></a>
+
+Merge é "mesclar" um branch dentro de outro, juntando as alterações que já estavam no código do branch base com as alterações do outro branch.
+
+![Mockup](imgs/merge.png)
+![Mockup](imgs/merged.png)
+
+Comando para fazer merge de um branch em outro:
+
+`git merge nome-do-branch-que-vai-ser-mergeado`
+
+**Importante:** Quando você rodar esse comando, o merge do nome-do-branch-que-vai-ser-mergeado vai ser feito com o branch em que você está no momento
+
+Pra saber em qual branch você está: `git status`
 
 ***
 
-### GitHub Pages
+### Extras <a name="extras"></a>
+
+**1. GitHub Pages**
+
 Quem tem uma conta no GitHub pode ter acesso a uma hospedagem gratuita para os projetos que estão com o código hospedado no GitHub.
 
 1) Criar um repositório no GitHub: username.github.io (username deve ser o seu username do GitHub)
@@ -351,18 +440,17 @@ Quem tem uma conta no GitHub pode ter acesso a uma hospedagem gratuita para os p
 
 ***
 
-### Fork
+**2. Fork**
 
-Um fork é uma cópia de um projeto de outra pessoa dentro do seu GitHub. É como quando você faz o clone de um repositório do seu GitHub pra sua máquina.
-
-Normalmente você faz um fork de um projeto para fazer melhorias no código. Depois das melhorias feitas, você vai abrir um pull request para o dono do repositório, e se suas modificações forem aceitas, seu código vai ser 'mergeado' no código original.
+Semelhante ao clone, o fork é uma cópia de um projeto de outra pessoa dentro do seu GitHub. 
+Normalmente você faz um fork de um projeto aberto para fazer melhorias no código. Depois das melhorias feitas, você vai abrir um pull request para o dono do repositório, e se suas modificações forem aceitas, seu código vai ser 'mergeado' no código original.
 
 https://github.com/octocat/Spoon-Knife
 https://github.com/octocat/Spoon-Knife/pulls
 
 ***
 
-### Links com mais conteúdo para consulta
+**3. Links com mais conteúdo para consulta**
 
 Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
 Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
@@ -370,7 +458,8 @@ Curso Gratuito - https://www.udemy.com/git-e-github-para-iniciantes/
 
 ***
 
-### Dicionário de Git
+**4. Dicionário de Git**
+
 Algumas palavras muito utilizadas com o Git/GitHub
 
 * Repositório: É um espaço digital aonde o seu projeto vai ser salvo. No seu computador ele é a pasta aonde o seu projeto está salvo.
