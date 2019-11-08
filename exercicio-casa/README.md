@@ -42,13 +42,13 @@
 * Clonar o repositório desta aula
 	
   ```
-  git clone https://github.com/reprograma/On3-git-e-github.git
+  git clone https://github.com/reprograma/On2-git-e-github.git
   ```
 
 * Entrar nesse repositório local
 
 	```
-  cd On3-git-e-github/exercicio-casa
+  cd On2-git-e-github/exercicio-casa
   ```
 
 * Criar uma branch nova com seu nome.
