@@ -6,9 +6,9 @@
 * [O que é Git Bash e por que é importante?](#gitbash)
 * [Instalação do Git](#instalacao)
 * [Configurações de autoria](#config-autoria)
-* [De: Remoto - Para: Local (Parte 1)](#local-remote-1)
+* [De: Local - Para: Remoto (Parte 1)](#local-remote-1)
 * [O que é GitHub e por que é importante?](#github)
-* [De: Remoto - Para: Local (Parte 2)](#local-remote-2)
+* [De: Local - Para: Remoto (Parte 2)](#local-remote-2)
 * [Etapas para trabalhar em um projeto distribuído](#etapas-projeto)
 * [Pra não esquecer](#dont-forget)
 * [Extras](#extras)
@@ -507,17 +507,17 @@ Quem tem uma conta no GitHub pode ter acesso a uma hospedagem gratuita para os p
 Semelhante ao clone, o fork é uma cópia de um projeto de outra pessoa dentro do seu GitHub. 
 Normalmente você faz um fork de um projeto aberto para fazer melhorias no código. Depois das melhorias feitas, você vai abrir um pull request para o dono do repositório, e se suas modificações forem aceitas, seu código vai ser 'mergeado' no código original.
 
-https://github.com/octocat/Spoon-Knife
-https://github.com/octocat/Spoon-Knife/pulls
+* https://github.com/octocat/Spoon-Knife
+* https://github.com/octocat/Spoon-Knife/pulls
 
 ***
 
 **3. Links com mais conteúdo para consulta**
 
-Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
-Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
-Curso Gratuito - https://www.udemy.com/git-e-github-para-iniciantes/
-Artigo por uma ex-aluna da Reprograma: https://medium.com/reprogramabr/git-e-github-por-onde-come%C3%A7ar-ca88a783c223
+* Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
+* Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
+* Curso Gratuito - https://www.udemy.com/git-e-github-para-iniciantes/
+* Artigo por uma ex-aluna da Reprograma: https://medium.com/reprogramabr/git-e-github-por-onde-come%C3%A7ar-ca88a783c223
 
 ***
 
