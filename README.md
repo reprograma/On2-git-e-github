@@ -512,7 +512,21 @@ Normalmente você faz um fork de um projeto aberto para fazer melhorias no códi
 
 ***
 
-**3. Links com mais conteúdo para consulta**
+**3. Terminal "estranho" ao dar Git Pull**
+
+Algumas vezes ao tentar o Git Pull, o terminal pode mostrar que está tentando fazer um merge uma mensagem parecida com essa: "Please enter a commit message to explain why this merge is necessary, especially if it merges an updated upstream into a topic branch." mas não te deixará 'sair' daí. Sem desespero! Siga os seguintes passos:
+
+1. Pressione "i"
+2. Digite sua mensagem de merge
+3. Pressione "Esc"
+4. Digite ":wq"
+5. Então pressione "Enter"
+
+No caso ele acabou alterando para outro editor de texto muito utilizado, chamado <a href="https://blog.caelum.com.br/desvendando-o-editor-vim/" target="_blank">Vim.</a> (só clicar pra saber mais sobre ele)
+
+***
+
+**4. Links com mais conteúdo para consulta**
 
 * Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
 * Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
@@ -521,7 +535,7 @@ Normalmente você faz um fork de um projeto aberto para fazer melhorias no códi
 
 ***
 
-**4. Dicionário de Git**
+**5. Dicionário de Git**
 
 Algumas palavras muito utilizadas com o Git/GitHub
 
