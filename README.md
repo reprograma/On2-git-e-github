@@ -7,14 +7,11 @@
 * [Instalação do Git](#instalacao)
 * [Configurações de autoria](#config-autoria)
 * [De: Local - Para: Remoto](#local-remote)
-* [O que é GitHub e por que é importante?](#o-que-é-github)
-* [De: Remoto - Para: Local](#remote-local)
-* [Fluxo do git](#fluxo-do-git)
-* [Branch](#branch)
-* [Merge](#merge)
-* [Pull request](#pull-request)
-* [Pra não esquecer:](#pra-nao-esquecer)
+* [O que é GitHub e por que é importante?](#github)
+* [De: Remoto - Para: Local (Parte 1)](#remote-local)
+* [De: Remoto - Para: Local (Parte 2)](#remote-local2)
 * [Etapas para trabalhar em um projeto distribuído](#etapas-projeto)
+* [Pra não esquecer:](#pra-nao-esquecer)
 * [Extras](#extras)
 
 ***
@@ -115,7 +112,7 @@ Esses arquivos devem ser adicionados (*add*) a uma área de preparação (*stagi
 ![Mockup](imgs/etapa3-git-log.png)
 
 
-### Vamos tentar?
+#### Vamos tentar?
 
 **1. Rastrear os arquivos desse projeto**
 
@@ -198,18 +195,16 @@ Significa que os arquivos foram adicionados para a área de preparação (*stagi
 	```
 	git log
 	```
-	
+
 ![Mockup](imgs/etapa3-git-log.png)
 
 Pronto! Sua pasta está com controle de versão!
 
-Significa que *plantamos a árvore* e sua árvore está devidamente rastreada.
-
-O Git estará de olho em tudo o que você alterar.
+Significa que *plantamos a árvore* e sua árvore está devidamente rastreada. O Git estará de olho em tudo o que você alterar.
 
 ***
 
-### O que é GitHub e por que é importante?
+### O que é GitHub e por que é importante?  <a name="github"></a>
 ![Mockup](imgs/github.png)
 
 É uma espécie de rede social muito utilizada principalmente por desenvolvedores, onde você pode publicar e compartilhar todos os seus projetos pessoais e particulares, além de colaborar com projetos de pessoas e empresas de todo o mundo.
@@ -228,7 +223,7 @@ Ah! E é bom lembrar que existem outros sites como o Github, como o Bitbucket, G
 
 ***
 
-### De: Local - Para: Remoto (Parte 2)
+### De: Local - Para: Remoto (Parte 2)  <a name="etapas-projeto2"></a>
 
 O que fizemos até agora:
 1) `cd pasta-do-projeto`
@@ -460,6 +455,7 @@ Isso significa que o código da sua branch **ex-aula-seuNome** estará replicado
 Merge é "mesclar" um branch dentro de outro, juntando as alterações que já estavam no código do branch base com as alterações do outro branch.
 
 ![Mockup](imgs/merge.png)
+
 Comando para fazer merge de um branch em outro:
 
 `git merge nome-do-branch-que-vai-ser-mergeado`
