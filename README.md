@@ -489,20 +489,7 @@ Pra saber em qual branch você está: `git status`
 
 ### Extras <a name="extras"></a>
 
-**1. GitHub Pages**
-
-Quem tem uma conta no GitHub pode ter acesso a uma hospedagem gratuita para os projetos que estão com o código hospedado no GitHub.
-
-1) Criar um repositório no GitHub: username.github.io (username deve ser o seu username do GitHub)
-2) Clonar repositório na sua máquina
-3) Add arquivos
-4) Fazer o commit
-5) Push para o GitHub
-6) Acessar https://username.github.io
-
-***
-
-**2. Fork**
+**1. Fork**
 
 Semelhante ao clone, o fork é uma cópia de um projeto de outra pessoa dentro do seu GitHub. 
 Normalmente você faz um fork de um projeto aberto para fazer melhorias no código. Depois das melhorias feitas, você vai abrir um pull request para o dono do repositório, e se suas modificações forem aceitas, seu código vai ser 'mergeado' no código original.
@@ -512,7 +499,7 @@ Normalmente você faz um fork de um projeto aberto para fazer melhorias no códi
 
 ***
 
-**3. Terminal "estranho" ao dar Git Pull**
+**2. Terminal "estranho" ao dar Git Pull**
 
 Algumas vezes ao tentar o Git Pull, o terminal pode mostrar que está tentando fazer um merge uma mensagem parecida com essa: "Please enter a commit message to explain why this merge is necessary, especially if it merges an updated upstream into a topic branch." mas não te deixará 'sair' daí. Sem desespero! Siga os seguintes passos:
 
@@ -526,7 +513,7 @@ No caso ele acabou alterando para outro editor de texto muito utilizado, chamado
 
 ***
 
-**4. Links com mais conteúdo para consulta**
+**3. Links com mais conteúdo para consulta**
 
 * Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
 * Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
@@ -535,7 +522,7 @@ No caso ele acabou alterando para outro editor de texto muito utilizado, chamado
 
 ***
 
-**5. Dicionário de Git**
+**4. Dicionário de Git**
 
 Algumas palavras muito utilizadas com o Git/GitHub
 
