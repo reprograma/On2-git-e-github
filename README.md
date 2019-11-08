@@ -8,12 +8,12 @@
 * [Configurações iniciais do Git](#config-inicial)
 * [Dicionário de Git](#dicionario-de-git)
 * [De: Local - Para: Remoto](#local-remote)
+* [O que é GitHub e por que é importante?](#o-que-é-github)
+* [De: Remoto - Para: Local](#remote-local)
 * [Fluxo do git](#fluxo-do-git)
 * [Branch](#branch)
 * [Merge](#merge)
 * [Pull request](#pull-request)
-* [O que é GitHub e por que é importante?](#o-que-é-github)
-* [Formas de trabalhar com o Git/GitHub](#formas-de-trabalhar-com-o-gitgithub)
 * [Pra não esquecer:](#pra-nao-esquecer)
 * [GitHub Pages](#github-pages)
 * [Como configurar a sua conta de GitHub na sua máquina](#como-configurara-a-sua-conta-de-GitHub-na-sua-máquina)
@@ -92,7 +92,7 @@ Você pode conferir se está configurado corretamente com o seguinte comando:
 
 ***
 
-### De: Local - Para: Remoto <a name="local-remote"></a>
+### De: Local - Para: Remoto (Parte 1) <a name="local-remote"></a>
 ![Mockup](imgs/fluxo.jpg)
 
 Ao alterarmos o código em um arquivo, além de salvar normalmente como outros programas, devemos "adicioná-lo" (add) em uma área de preparação chamada "stage area". 
@@ -107,7 +107,7 @@ Imagem da pasta contendo todos os arquivos do projeto:
 
 ---
 
-Esses arquivos devem ser adicionados a uma área de preparação (*staging area*)
+Esses arquivos devem ser adicionados (*add*) a uma área de preparação (*staging area*)
 
 ![Mockup](imgs/etapa2-git-add.png)
 
@@ -126,19 +126,19 @@ Esses arquivos devem ser adicionados a uma área de preparação (*staging area*
 
 * Clicar com o botão direito e abrir o Git Bash selecionando ***Git Bash here***
 
-* Listar os arquivos dessa pasta. (Ex: ver os arquivos `index.html` e a pasta `css`)
+* Listar os arquivos dessa pasta (ex: ver os arquivos `index.html` e a pasta `css`):
 
 	```
 	ls
 	```
 
-* Iniciar o rastreamento. (Você deve estar DENTRO da pasta do projeto que quer rastrear)
+* Iniciar o rastreamento (Você deve estar DENTRO da pasta do projeto que quer rastrear):
 
 	```
 	git init
 	```
 
-* Listar os arquivos dessa pasta, incluindo os arquivos ocultos. E verificar se surgiu uma pasta oculta chamada .git na sua pasta
+* Listar os arquivos dessa pasta, incluindo os arquivos ocultos. E verificar se surgiu uma pasta oculta chamada .git na sua pasta:
 
 	```
 	ls -a
@@ -156,21 +156,21 @@ Significa que estamos nessa etapa:
 
 ---
 
-3. **Adicionar arquivos na área de preparação (staging area)** 
+**2. Adicionar arquivos na área de preparação (staging area)** 
 
-* Adicionar o arquivo modificado. (Ex: `git add index.html`)
+* Adicionar o arquivo modificado (ex: `git add index.html`):
 
 	```
 	git add <nome do arquivo>
 	```
 
-*	Ou... Adicionar todos os arquivos
+*	Ou... Adicionar todos os arquivos:
 
 	```
-	git add --all
+	git add .
 	```
 
-* Verificar o status da sua pasta
+* Verificar o status da sua pasta:
 
 	```
 	git status
@@ -182,9 +182,9 @@ Significa que os arquivos foram adicionados para a área de preparação (*stagi
 
 ---
 
-4. **Definir mensagem que descreve as alterações realizadas** 
+**3. Definir mensagem que descreve as alterações realizadas** 
 
-* Adicionar a mensagem dizendo o que você fez de alteração.
+* Adicionar a mensagem dizendo o que você fez de alteração:
 
 	```
 	git commit -m "primeiro projeto da reprograma, contendo um site sobre mim"
@@ -192,9 +192,7 @@ Significa que os arquivos foram adicionados para a área de preparação (*stagi
 	
  A palavra *commit* significa comprometer-se. Isso significa que você assume o compromisso de que adicionou os arquivos novos (ou modificados), assinou a autoria e deixou uma mensagem dizendo o que foi alterado.
  
-![Mockup](imgs/etapa3-git-commit.png)
-
-*Obs: é uma boa prática escrever uma mensagem coerente e clara sobre a alteração realizada, de maneira que fique intuitivo para quem lê depois*
+ *Obs: é uma boa prática escrever uma mensagem coerente e clara sobre a alteração realizada, de maneira que fique intuitivo para quem lê depois - comumente em inglês*
 	
 <img src="https://vidadeprogramador.com.br/uploads/2017/07/tirinha1713.png">
 	
@@ -203,18 +201,119 @@ Significa que os arquivos foram adicionados para a área de preparação (*stagi
 	```
 	git log
 	```
-
-	<img src="" >
+	
+![Mockup](imgs/etapa3-git-log.png)
 
 Pronto! Sua pasta está com controle de versão!
 
 Significa que *plantamos a árvore* e sua árvore está devidamente rastreada.
 
-<img src="">
-
 O Git estará de olho em tudo o que você alterar.
 
 ***
+
+### O que é GitHub e por que é importante?
+![Mockup](imgs/github.png)
+
+É uma espécie de rede social muito utilizada principalmente por desenvolvedores, onde você pode publicar e compartilhar todos os seus projetos pessoais e particulares, além de colaborar com projetos de pessoas e empresas de todo o mundo.
+É uma forma mais visual de trabalhar com o Git, pois possui uma interface gráfica e também apps para desktop.
+Você pode salvar todos seus projetos de forma pública no seu perfil (qualquer pessoa, mesmo sem ter uma conta pode ver e baixar tudo o que você publicar), e de forma privada (somente membros com permissão de acesso podem visualizar ou baixar seu projeto) a partir de $7/m.
+
+Resumidamente: Você trabalha na sua máquina e salva versões do seu código no GitHub, e também pode baixar cópias do código que está hospedado GitHub para a sua máquina.
+
+É importante para:
+* Portfólio: É um site seguro para guardar e mostrar seus projetos. Quase sempre as empresas olham seu GitHub antes de uma entrevista de emprego.
+* Organização - Permite que todo mundo trabalhe no mesmo projeto (seja um projeto da sua empresa ou um Open Source).
+* Ferramentas - Porque oferece funcionalidades extras ao git, como interface visual, documentação, bug tracking, feature requests, pull requests, etc.
+* Versatilidade: Você pode guardar qualquer tipo de arquivo no git/Github, não necessariamente código. Por exemplo, essa aula que estamos vendo. O Github utiliza uma linguagem chamada [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), que permite criar listas, links, ancôras, adicionar imagens, vídeos, gifs...
+
+Ah! E é bom lembrar que existem outros sites como o Github, como o Bitbucket, Gitlab, entre outros.
+
+***
+
+### De: Local - Para: Remoto (Parte 2)
+
+O que fizemos até agora:
+1) `cd pasta-do-projeto`
+2) `git init`
+3) `git add .` (para adicionar todos os arquivos de uma vez) ou `git add caminho-do-arquivo`
+4) `git commit -m "mensagem"`
+
+Agora devemos criar um repositório novo no GitHub:
+
+* Crie uma conta no Github, caso você ainda não tenha.
+**Importante:** escolha bem seu nome de usuário, pois essa url vai ser muito utilizada durante a vida profissional.
+
+* Entre na sua página do GitHub. (Fazer login)
+
+* Criar um repositório novo e nomear
+
+* Após criado um novo repositório lá no GitHub, iremos adicionar o endereço remoto em nosso repositório local:
+
+	```
+	git remote add origin 'https://github.com/<seuLogin>/<seuRepo>.git'
+	```
+
+* Verificar o endereço do repositório remoto:
+
+	```
+	git remote -v
+	```
+
+* Verificar o status do seu repositório local:
+
+	```
+	git status
+	```
+
+* Como já havíamos salvo todas alterações no git localmente, agora é só subir as alterações locais para o repositório remoto:
+
+	```
+	git push -u origin master
+	```
+
+Pronto! Verifique seu repositório no GitHub. Os arquivos que estavam na máquina de vocês agora devem estar salvos lá 🎉
+Agora uma cópia do trabalho de vocês até agora está salvo no GitHub, onde você poderá compartilhar com o mundo.
+
+Bom, até agora estamos apenas trabalhando assim:
+
+![Mockup](imgs/commit.png)
+
+Mas esse fluxo dá a entender que apenas uma pessoa está alterando o código certo? Para entender como o Git realmente funciona na vida real, vamos simular o trabalho de uma equipe no mesmo projeto.
+
+### Etapas para trabalhar em um projeto distribuído
+	
+1. [Clonar o projeto](#ex-clone)
+
+2. [Criar uma branch nova](#ex-branch)
+
+3. [Fazer suas modificações na branch nova](#ex-coding)
+
+4. [Verificar alterações](#ex-diff)
+
+5. [Adicionar arquivos na área de preparação (staging area)](#ex-add)
+
+6. [Definir mensagem que descreve as alterações realizadas](#ex-commit)
+
+7. [Subir alteração da sua branch para o GitHub](#ex-push)
+
+8. [Verificar se sua branch aparece no GitHub](#ex-github)
+
+9. [Solicitar que sua alteração vá para a branch master (Criar pull request)](#ex-pull-request)
+
+10. [Aguardar aprovação do seu código](#ex-merge)
+
+---
+
+**1. Clonar o projeto** <a name="ex-clone"></a>
+
+Vamos testar clonar um repositório pré-existente no Github:
+
+1) Acessar https://github.com/reprograma
+2) Acessar o repositório `On2-git-e-github`
+3) Clicar no botão `Clone or download` e copiar a URL
+4) Navegar até a pasta onde você vai fazer o clone do projeto (tente apenas por linha de comando!)
+5) `git clone url-que-vocês-copiaram`
 
 ### Branch
 O git tem uma linha do tempo principal chamada master, que é a base criada junto com cada repositório. Quando trabalhamos sozinhas em um repositório não tem problema trabalharmos sempre no master, mas quando começamos a trabalhar com outras pessoas em um projeto, surge a necessidade de ter uma cópia do projeto que seja livre de bugs e que esteja funcionando 100%. Essa cópia é a master.
@@ -269,58 +368,6 @@ Um pull request é quando você quer fazer merge do seu código em outro branch,
 
 ***
 
-### O que é GitHub e por que é importante?
-![Mockup](imgs/github.png)
-
-É uma espécie de rede social muito utilizada principalmente por desenvolvedores, onde você pode publicar e compartilhar todos os seus projetos pessoais e particulares, além de colaborar com projetos de pessoas e empresas de todo o mundo.
-É uma forma mais visual de trabalhar com o Git, pois possui uma interface gráfica e também apps para desktop.
-Você pode salvar todos seus projetos de forma pública no seu perfil (qualquer pessoa, mesmo sem ter uma conta pode ver e baixar tudo o que você publicar), e de forma privada (somente membros com permissão de acesso podem visualizar ou baixar seu projeto) a partir de $7/m.
-O GitHub é uma startup americana e recentemente foi adquirido por $7.5 bilhões (isso mesmo, [bilhões](https://techcrunch.com/2018/06/04/microsoft-has-acquired-github-for-7-5b-in-microsoft-stock/)) pela Microsoft.
-
-Resumidamente: Você trabalha na sua máquina e salva versões do seu código no GitHub, e também pode baixar cópias do código que está hospedado GitHub para a sua máquina.
-
-É importante para:
-* Portfólio: É um site seguro para guardar e mostrar seus projetos. Quase sempre as empresas olham seu GitHub antes de uma entrevista de emprego.
-* Organização - Permite que todo mundo trabalhe no mesmo projeto (seja um projeto da sua empresa ou um Open Source).
-* Ferramentas - Porque oferece funcionalidades extras ao git, como interface visual, documentação, bug tracking, feature requests, pull requests, etc.
-* Versatilidade: Você pode guardar qualquer tipo de arquivo no git/Github, não necessariamente código. Por exemplo, essa aula que estamos vendo. O Github utiliza uma linguagem chamada [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), que permite criar listas, links, ancôras, adicionar imagens, vídeos, gifs...
-
-***
-
-### Formas de trabalhar com o Git/GitHub
-1) Baixar um projeto que está hospedado no GitHub para a nossa máquina ou
-2) Iniciar um projeto novo na minha máquina e subir para o GitHub
-
-***
-
-#### Baixar um projeto que está hospedado no GitHub para a nossa máquina
-1) Acessar o GitHub e criar uma conta gratuita.
-**Importante:** escolha bem seu nome de usuário, pois essa url vai ser muito utilizada durante a vida profissional.
-
-2) Acessar https://github.com/reprograma
-3) Acessar o repositório `github`
-4) Clicar no botão `Clone or download` e copiar a url https
-4) Navegar até a pasta aonde você vai fazer o clone do projeto
-5) `git clone url-que-vocês-copiaram`
-
-***
-
-#### Iniciar um projeto local e subir pro GitHub
-1) Navegar pela linha de comando até a pasta desejada
-2) Rodar o comando  git status. Provavelmente o Git não vai estar iniciado nessa pasta, então vamos rodar um comando para avisar para o Git começar a versionar essa pasta: `git init`
-4) Criar um repositório no GitHub (colocar o nome do projeto de vocês)
-5) Copiar a url do repositório (igual vocês fizeram no exemplo anterior)
-6) `git add .` (para adicionar todos os arquivos de uma vez) ou `git add caminho-do-arquivo`
-git `commit -m "Aqui você escreve uma mensagem que ajude quem estiver lendo a saber o que você adicionou/modificou nos arquivos"`
-7) `git remote add origin url-que-voces-copiaram-do-github`
-8) `git remote -v` (vai mostrar as urls, provavelmente duas)
-9) `git push origin master`
-
-Abrir o repositório no GitHub. Os arquivos que estavam na máquina de vocês agora devem estar salvos no GitHub 🎉
-Agora uma cópia do trabalho de vocês até agora está salvo no GitHub, e o Git está monitorando essa pasta.
-A partir de agora, sempre que vocês modficarem/adicionarem/removerem arquivos nessa pasta, o Git vai saber e  vai mostrar tudo o que foi modificado/adicionado/removido.
-
-***
 
 ### Pra não esquecer:
 (comandos que mais vamos usar)
