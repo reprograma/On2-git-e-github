@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: initial;
+  }
+  
+  .container__aluna {
+    width: 200px;
+    margin: 20px;
+    border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  }
