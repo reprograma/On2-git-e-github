@@ -8,8 +8,8 @@
 * [Configurações de autoria](#config-autoria)
 * [De: Local - Para: Remoto](#local-remote)
 * [O que é GitHub e por que é importante?](#github)
-* [De: Remoto - Para: Local (Parte 1)](#remote-local)
-* [De: Remoto - Para: Local (Parte 2)](#remote-local2)
+* [De: Remoto - Para: Local (Parte 1)](#local-remote-1)
+* [De: Remoto - Para: Local (Parte 2)](#local-remote-2)
 * [Etapas para trabalhar em um projeto distribuído](#etapas-projeto)
 * [Pra não esquecer:](#pra-nao-esquecer)
 * [Extras](#extras)
@@ -58,6 +58,7 @@ Se formos utilizar um exemplo para exemplificar o Git, podemos dizer que ele usa
 ***
 
 ### O que é Git Bash e por que é importante? <a name="gitbash"></a>
+![Mockup](imgs/gitbash.png)
 É um software para utilizar as linhas de comando do Git além de alguns comandos Unix, necessário principalmente no Windows, já que inicialmente o Git foi desenvolvido para o Linux.
 
 ***
@@ -86,7 +87,7 @@ Você pode conferir se está configurado corretamente com o seguinte comando:
 
 ***
 
-### De: Local - Para: Remoto (Parte 1) <a name="local-remote"></a>
+### De: Local - Para: Remoto (Parte 1) <a name="local-remote-1"></a>
 ![Mockup](imgs/fluxo.jpg)
 
 Ao alterarmos o código em um arquivo, além de salvar normalmente como outros programas, devemos "adicioná-lo" (add) em uma área de preparação chamada "stage area". 
@@ -114,7 +115,13 @@ Esses arquivos devem ser adicionados (*add*) a uma área de preparação (*stagi
 
 #### Vamos tentar?
 
-**1. Rastrear os arquivos desse projeto**
+1. [Rastrear os arquivos desse projeto](#ex-rastrear)
+
+2. [Adicionar arquivos na área de preparação (staging area)](#ex-add-files)
+
+3. [Definir mensagem que descreve as alterações realizadas](#ex-define-msg)
+
+**1. Rastrear os arquivos desse projeto** <a name="ex-rastrear"></a>
 
 * Entrar na pasta do seu primeiro projeto ou a pasta de uma das aulas da Reprograma de semanas anteriores
 
@@ -150,7 +157,7 @@ Significa que estamos nessa etapa:
 
 ---
 
-**2. Adicionar arquivos na área de preparação (staging area)** 
+**2. Adicionar arquivos na área de preparação (staging area)** <a name="ex-add-files"></a>
 
 * Adicionar o arquivo modificado (ex: `git add index.html`):
 
@@ -176,7 +183,7 @@ Significa que os arquivos foram adicionados para a área de preparação (*stagi
 
 ---
 
-**3. Definir mensagem que descreve as alterações realizadas** 
+**3. Definir mensagem que descreve as alterações realizadas** <a name="ex-define-msg"></a>
 
 * Adicionar a mensagem dizendo o que você fez de alteração:
 
@@ -223,7 +230,7 @@ Ah! E é bom lembrar que existem outros sites como o Github, como o Bitbucket, G
 
 ***
 
-### De: Local - Para: Remoto (Parte 2)  <a name="etapas-projeto2"></a>
+### De: Local - Para: Remoto (Parte 2)  <a name="local-remote-2"></a>
 
 O que fizemos até agora:
 1) `cd pasta-do-projeto`
