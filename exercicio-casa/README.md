@@ -3,13 +3,14 @@
 ### Instruções
 
 ##### Configurações básicas iniciais
-* Ter o git instalado na sua máquina
+* Ter o git instalado na sua máquina, vamos conferir se existe e qual a versão usando o comando:
 	
   ```
   git --version
   ```
+  * Caso não tenha, baixe pelo site: https://git-scm.com/downloads
 
-* Abra o Git Bash
+* Abra o Git Bash (software de terminal de comando)
 
 * Verifique se seu usuário está configurado na sua máquina. (Deve aparecer seu ***user.name*** e ***user.email***)
 	
@@ -33,39 +34,37 @@
 
 * Entre no Git Bash
 
-* Verifique se está no diretório em que deseja clonar o repositório
+* Verifique se está no diretório (local) em que deseja clonar o repositório:
 	
   ```
   pwd
   ```
+  * Se não estiver, lembre de navegar para a pasta correta utilizando alguns comandos no [terminal](#comandos)
 
-* Clonar o repositório desta aula
+
+* Clonar o repositório desta aula aqui do Github
 	
   ```
   git clone https://github.com/reprograma/On2-git-e-github.git
   ```
 
-* Entrar nesse repositório local
+* Entrar nesse repositório (dentro do repo. da aula)
 
 	```
   cd On2-git-e-github/exercicio-casa
   ```
 
-* Criar uma branch nova com seu nome.
+* Criar uma branch nova com seu nome:
 	
   ```
   git checkout -b suaBranch
   ```
 
-* Entrar no VSCode
+***
 
-	```
-  code .
-  ```
+### Exercício
 
-* Entrar na pasta exercicio-casa e siga as instruções do readme.md
-
-* Alterar a imagem e o link para seu github na `<div>` que contiver seu nome.
+* Dentro do arquivo Html na pasta exercicio-casa, alterar a imagem e o link para seu github na `<div>` que contiver seu nome.
 	* Use o link do seu github para colocar no ***href*** na tag `<a>`. (Ex: https://github.com/reprograma)
 	* Use o link da imagem do seu avatar no github para colocar no ***src*** da tag `<img>`. Clique com o botão direito sobre a imagem do seu perfil no github e copie o endereço da imagem. (Ex: https://avatars0.githubusercontent.com/u/27314899?s=200&v=4)
   * Adicione seu nome no ***alt*** da tag `<img>`
@@ -94,12 +93,10 @@
     </div>
     ```
 
-* Conferir essa alteração no navegador (Chrome).
+* Depois abra o html para conferir essa alteração no navegador (Chrome).
 	* *Comportamento esperado: ao clicar na sua foto, o link do seu Github irá se abrir numa aba nova*
 
-* Voltando para o Git Bash
-
-* Verificar o status
+* Voltando para o Git Bash, verifique o status
 	
   ```
   git status
@@ -129,17 +126,20 @@
   git push origin suaBranch
   ```
 
-* Verificar se as alterações foram atualizadas na sua branch lá no github (https://github.com/reprograma/On2-git-e-github)
+* Verificar se as alterações foram atualizadas na sua branch lá no Github (https://github.com/reprograma/On2-git-e-github), você pode verificar sua branch clicando em "branch: master" como mostra abaixo:
 
-* Ir para a aba ***Pull requests***
+![Mockup](../imgs/branch-github.png)
 
-* Criar novo ***New pull request*** pelo github da reprograma verificando se está fazendo a solicitação da suaBranch para a master
+* Ainda no Github, ir para a aba ***Pull requests***
+
+* Criar novo ***New pull request*** pelo Github verificando se está fazendo a solicitação da suaBranch para a master
 	*base: **master**    **<=**    compare: **suaBranch***
 
----
+***
 
-##### Após todos ***pull requests*** dessa aula serem aceitos, caso queria atualizar localmente seu repositório:
-* Voltar para a branch master
+##### Após todos ***pull requests*** dessa aula serem aceitos, vamos atualizar localmente seu repositório
+
+* No Git Bash, voltar para a branch master
 	
   ```
   git checkout master
@@ -153,8 +153,10 @@
 
 * Verificar no navegador (Chrome) se todas as atualizações vieram
 
----
-##### Deletar sua branch após seu ***pull request*** ser aceito
+***
+
+##### Agora bora deletar sua branch após seu ***pull request*** ser aceito
+
 * Estar na branch **master** para remover a branch **suaBranch**
 	
   ```
@@ -165,9 +167,9 @@
   git branch -d suaBranch
   ```
 
----
+***
 
-##### Subir esse repositório no seu Github
+##### Vamos subir no seu próprio Github?
 
 * Criar um novo respositório no seu Github
 
@@ -190,3 +192,17 @@
   ```
   git push origin master
   ```
+
+***
+
+### Comandos básicos do terminal <a name="comandos"></a>
+
+```
+ls - Listar (ele traz uma lista de tudo o que está naquela pasta - documentos, outras pastas, etc)
+pwd - Present working directory (onde estou?) Ele traz todo o caminho onde você está (em que pasta e onde essa pasta fica)
+cd - change directory (use para se locomover entre as pastas)
+cd ~ - volta para a pasta raiz
+cd . - volta uma pasta acima
+cd nome-da-pasta - para entrar em uma pasta específica (você precisa conseguir enxergar ela quando listar os arquivos)
+whoami - "quem sou eu?" identifica o usuário que está mexendo no sistema.
+```
