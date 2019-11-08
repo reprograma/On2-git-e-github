@@ -6,12 +6,11 @@
 * [O que é Git Bash e por que é importante?](#gitbash)
 * [Instalação do Git](#instalacao)
 * [Configurações de autoria](#config-autoria)
-* [De: Local - Para: Remoto](#local-remote)
+* [De: Remoto - Para: Local (Parte 1)](#local-remote-1)
 * [O que é GitHub e por que é importante?](#github)
-* [De: Remoto - Para: Local (Parte 1)](#remote-local)
-* [De: Remoto - Para: Local (Parte 2)](#remote-local2)
+* [De: Remoto - Para: Local (Parte 2)](#local-remote-2)
 * [Etapas para trabalhar em um projeto distribuído](#etapas-projeto)
-* [Pra não esquecer:](#pra-nao-esquecer)
+* [Pra não esquecer](#dont-forget)
 * [Extras](#extras)
 
 ***
@@ -58,6 +57,8 @@ Se formos utilizar um exemplo para exemplificar o Git, podemos dizer que ele usa
 ***
 
 ### O que é Git Bash e por que é importante? <a name="gitbash"></a>
+![Mockup](imgs/gitbash.png)
+
 É um software para utilizar as linhas de comando do Git além de alguns comandos Unix, necessário principalmente no Windows, já que inicialmente o Git foi desenvolvido para o Linux.
 
 ***
@@ -86,7 +87,7 @@ Você pode conferir se está configurado corretamente com o seguinte comando:
 
 ***
 
-### De: Local - Para: Remoto (Parte 1) <a name="local-remote"></a>
+### De: Local - Para: Remoto (Parte 1) <a name="local-remote-1"></a>
 ![Mockup](imgs/fluxo.jpg)
 
 Ao alterarmos o código em um arquivo, além de salvar normalmente como outros programas, devemos "adicioná-lo" (add) em uma área de preparação chamada "stage area". 
@@ -114,7 +115,13 @@ Esses arquivos devem ser adicionados (*add*) a uma área de preparação (*stagi
 
 #### Vamos tentar?
 
-**1. Rastrear os arquivos desse projeto**
+1. [Rastrear os arquivos desse projeto](#ex-rastrear)
+
+2. [Adicionar arquivos na área de preparação (staging area)](#ex-add-files)
+
+3. [Definir mensagem que descreve as alterações realizadas](#ex-define-msg)
+
+**1. Rastrear os arquivos desse projeto** <a name="ex-rastrear"></a>
 
 * Entrar na pasta do seu primeiro projeto ou a pasta de uma das aulas da Reprograma de semanas anteriores
 
@@ -150,7 +157,7 @@ Significa que estamos nessa etapa:
 
 ---
 
-**2. Adicionar arquivos na área de preparação (staging area)** 
+**2. Adicionar arquivos na área de preparação (staging area)** <a name="ex-add-files"></a>
 
 * Adicionar o arquivo modificado (ex: `git add index.html`):
 
@@ -176,7 +183,7 @@ Significa que os arquivos foram adicionados para a área de preparação (*stagi
 
 ---
 
-**3. Definir mensagem que descreve as alterações realizadas** 
+**3. Definir mensagem que descreve as alterações realizadas** <a name="ex-define-msg"></a>
 
 * Adicionar a mensagem dizendo o que você fez de alteração:
 
@@ -223,7 +230,7 @@ Ah! E é bom lembrar que existem outros sites como o Github, como o Bitbucket, G
 
 ***
 
-### De: Local - Para: Remoto (Parte 2)  <a name="etapas-projeto2"></a>
+### De: Local - Para: Remoto (Parte 2)  <a name="local-remote-2"></a>
 
 O que fizemos até agora:
 1) `cd pasta-do-projeto`
@@ -291,11 +298,13 @@ Mas esse fluxo dá a entender que apenas uma pessoa está alterando o código ce
 
 7. [Subir alteração da sua branch para o GitHub](#ex-push)
 
-8. [Verificar se sua branch aparece no GitHub](#ex-github)
+8. [Solicitar que sua alteração vá para a branch master (Criar pull request)](#ex-pull-request)
 
-9. [Solicitar que sua alteração vá para a branch master (Criar pull request)](#ex-pull-request)
+9. [Resolvendo conflitos](#ex-conflict)
 
-10. [Aguardar aprovação do seu código](#ex-merge)
+10. [Aguardar aprovação do seu código](#ex-wait)
+
+11. [Caso não precise de aprovação (Merge)](#ex-merge)
 
 ---
 
@@ -431,7 +440,7 @@ Assim como o commit, você deve escrever uma mensagem resumindo suas alteraçõe
 
 ---
 
-**9. Resolvendo conflitos**  <a name="ex-conflict"></a>
+**9. Resolvendo conflitos** <a name="ex-conflict"></a>
 
 Se duas ou mais pessoas mexerem no mesmo arquivo simultaneamente, isso pode gerar conflito de código.
 O Git consegue resolver alguns desses conflitos automaticamente, mas em outros casos o desenvolvedor que está fazendo o merge tem que resolver esse conflito e depois continuar com o merge.
@@ -508,6 +517,7 @@ https://github.com/octocat/Spoon-Knife/pulls
 Documentação oficial do Git com vários passo-a-passos: https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git
 Git e Github (textos e vídeos): https://guides.github.com/activities/hello-world/
 Curso Gratuito - https://www.udemy.com/git-e-github-para-iniciantes/
+Artigo por uma ex-aluna da Reprograma: https://medium.com/reprogramabr/git-e-github-por-onde-come%C3%A7ar-ca88a783c223
 
 ***
 

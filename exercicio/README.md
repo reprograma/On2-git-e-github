@@ -1,6 +1,7 @@
 # Git e Github
 
 ### Instruções
+
 ##### Configurações básicas iniciais
 * Ter o git instalado na sua máquina
 	
@@ -22,7 +23,6 @@
     git config --global user.name "Seu Nome"
     ```
 
-		
     ```
     git config --global user.email "seu@email.com"
     ```
@@ -42,13 +42,13 @@
 * Clonar o repositório desta aula
 	
   ```
-  git clone https://github.com/reprograma/On3-git-e-github.git
+  git clone https://github.com/reprograma/On2-git-e-github.git
   ```
 
 * Entrar nesse repositório local
 
 	```
-  cd On3-git-e-github/exercicio-casa
+  cd On2-git-e-github/exercicio-casa
   ```
 
 * Criar uma branch nova com seu nome.
@@ -79,7 +79,7 @@
         <a href="#" target="_blank">
             <img class="container__aluna-img" src="https://via.placeholder.com/500" alt="">
         </a>
-        <p>Cintia Fumi</p>
+        <p>Fulana Silva</p>
     </div>
     ```
     
@@ -95,7 +95,7 @@
     ```
 
 * Conferir essa alteração no navegador (Chrome).
-	* *Comportamento esperado: ao clicar na sua foto, o link do seu github irá se abrir numa aba nova*
+	* *Comportamento esperado: ao clicar na sua foto, o link do seu Github irá se abrir numa aba nova*
 
 * Voltando para o Git Bash
 
@@ -105,7 +105,7 @@
   git status
   ```
 
-* Adicionar as alterações para área de preparação
+* Adicionar as alterações para área de stage
 	
   ```
   git add index.html
@@ -129,12 +129,16 @@
   git push origin suaBranch
   ```
 
-* Verificar se as alterações foram atualizadas na sua branch lá no github (https://github.com/reprograma/On3-git-e-github)
+* Verificar se as alterações foram atualizadas na sua branch lá no github (https://github.com/reprograma/On2-git-e-github)
+
 * Ir para a aba ***Pull requests***
+
 * Criar novo ***New pull request*** pelo github da reprograma verificando se está fazendo a solicitação da suaBranch para a master
 	*base: **master**    **<=**    compare: **suaBranch***
+
 ---
-##### Após todos ***pull request**ula* dessa a serem aceitos, caso queria atualizar localmente seu repositório:
+
+##### Após todos ***pull requests*** dessa aula serem aceitos, caso queria atualizar localmente seu repositório:
 * Voltar para a branch master
 	
   ```
@@ -156,24 +160,25 @@
   ```
   git checkout master
   ```
-
 	
   ```
   git branch -d suaBranch
   ```
 
-
-
 ---
-##### Subir esse repositório no seu github
-* Criar um novo respositório no seu github
+
+##### Subir esse repositório no seu Github
+
+* Criar um novo respositório no seu Github
+
 * Copiar o link desse novo repositório e adicionar o remote ***meuRepo*** como endereço do seu repositório
     
   ```
   git remote add meuRepo https://github.com/<seuLogin>/<seuNovoRepositorio>.git
   ```
 
-	obs: Nesse link acima, substituir `<seuLogin>` e `<seuNovoRepositorio>` com informações do seu login e seu repositório
+	Obs: Nesse link acima, substituir `<seuLogin>` e `<seuNovoRepositorio>` com informações do seu login e seu repositório
+  
 * Commitar o que está local para seu repo novo
 
   ```
