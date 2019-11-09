@@ -204,5 +204,6 @@ cd - change directory (use para se locomover entre as pastas)
 cd ~ - volta para a pasta raiz
 cd . - volta uma pasta acima
 cd nome-da-pasta - para entrar em uma pasta específica (você precisa conseguir enxergar ela quando listar os arquivos)
-whoami - "quem sou eu?" identifica o usuário que está mexendo no sistema.
+mkdir - make a directory, cria uma nova pasta. Precisa colocar o nome da nova pasta. Ex: mkdir nomePastaNova
+echo - echo, cria um arquivo. Precisa indicar o conteúdo e o nome do arquivo. Ex: echo "oi" > index.html
 ```
