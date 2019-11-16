@@ -2,7 +2,7 @@
 
 ### Instruções
 
-##### Configurações básicas iniciais
+#### Configurações básicas iniciais
 * Ter o git instalado na sua máquina, vamos conferir se existe e qual a versão usando o comando:
 	
   ```
@@ -30,7 +30,7 @@
 
 ---
 
-##### Clonar o repositório do exercício na sua máquina
+#### Clonar o repositório do exercício na sua máquina
 
 * Entre no Git Bash
 
@@ -49,6 +49,7 @@
   ```
 
 * Entrar nesse repositório (dentro do repo. da aula)
+    * Atenção: confira se não está entrando/editando outro repositório que tenha clonado antes! Talvez esteja até com mesmo nome, mas em outra pasta
 
 	```
   cd On2-git-e-github/exercicio-casa
@@ -135,9 +136,17 @@
 * Criar novo ***New pull request*** pelo Github verificando se está fazendo a solicitação da suaBranch para a master
 	*base: **master**    **<=**    compare: **suaBranch***
 
+* Adicione uma colega sua E a Milena como reviewer do seu Pull Request! Lembrando que isso faz parte de uma prática comum em um time de desenvolvimento, onde você revisa o código enviado por seus colegas a procura de melhorias.
+
+![Mockup](../imgs/ex-reviewer.png)
+
+##### Obs: Mesmo com aprovação da reviwer, quem fará o Merge (e assim incluir seu código na master) será a Milena, então não se preocupem ok?
+
 ***
 
-##### Após todos ***pull requests*** dessa aula serem aceitos, vamos atualizar localmente seu repositório
+### Os passos seguintes são complementarem, podem ser feitos após a sexta-feira!
+
+#### Após todos ***pull requests*** dessa aula serem aceitos, vamos atualizar localmente seu repositório
 
 * No Git Bash, voltar para a branch master
 	
@@ -155,7 +164,7 @@
 
 ***
 
-##### Agora bora deletar sua branch após seu ***pull request*** ser aceito
+#### Agora bora deletar sua branch após seu ***pull request*** ser aceito
 
 * Estar na branch **master** para remover a branch **suaBranch**
 	
@@ -169,7 +178,7 @@
 
 ***
 
-##### Vamos subir no seu próprio Github?
+#### Vamos subir no seu próprio Github?
 
 * Criar um novo respositório no seu Github
 
