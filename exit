@@ -1,48 +1,392 @@
-* [32mmaster[m
-  primeirobranch[m
-  [31mremotes/origin/AllanaCaldas[m
-  [31mremotes/origin/CarolFerreira[m
-  [31mremotes/origin/CintyaAmaral[m
-  [31mremotes/origin/CrislaneSilva[m
-  [31mremotes/origin/FernandaBergoci2[m
-  [31mremotes/origin/HEAD[m -> origin/master
-  [31mremotes/origin/JessicaNascimento[m
-  [31mremotes/origin/JessicaNascimento-exercicio-casa[m
-  [31mremotes/origin/LauraCarvalho[m
-  [31mremotes/origin/Lauracarvalho[m
-  [31mremotes/origin/Sofia-Santiago[m
-  [31mremotes/origin/Stéphanie[m
-  [31mremotes/origin/Tereza_N[m
-  [31mremotes/origin/aline-excasa[m
-  [31mremotes/origin/alinesilva[m
-  [31mremotes/origin/allana-cardoso[m
-  [31mremotes/origin/andreaBabilonia[m
-  [31mremotes/origin/artistadealuguel[m
-  [31mremotes/origin/brunaBetini[m
-  [31mremotes/origin/carollbedin[m
-  [31mremotes/origin/carolllbedin[m
-  [31mremotes/origin/ceciliab[m
-  [31mremotes/origin/elaine-ex.casa[m
-  [31mremotes/origin/elaineestainer[m
-  [31mremotes/origin/elisabrasil[m
-  [31mremotes/origin/excasaamandagonzaga[m
-  [31mremotes/origin/exemploExercicio[m
-  [31mremotes/origin/exercicioCasa[m
-  [31mremotes/origin/fernandaBergoci[m
-  [31mremotes/origin/ingrid-avatar[m
-  [31mremotes/origin/lainemoura[m
-  [31mremotes/origin/lainemouraulaexerc[m
-  [31mremotes/origin/lauraCarvalho[m
-  [31mremotes/origin/louiseascp[m
-  [31mremotes/origin/marcelarecht[m
-  [31mremotes/origin/master[m
-  [31mremotes/origin/michellesantana[m
-  [31mremotes/origin/priscilaFlores[m
-  [31mremotes/origin/rbottiglia[m
-  [31mremotes/origin/renataBottiglia[m
-  [31mremotes/origin/sofiasantiago[m
-  [31mremotes/origin/stelabruno[m
-  [31mremotes/origin/stelabs[m
-  [31mremotes/origin/tativargas[m
-  [31mremotes/origin/tativargas-exercicio-casa[m
-  [31mremotes/origin/tayse[m
+[33mcommit 6fbc295c911cf98fe04073324e694b83967e0144[m[33m ([m[1;36mHEAD -> [m[1;32mvanessalacerenza[m[33m)[m
+Author: Vanessa Lacerenza <van.lacerenza@gmail.com>
+Date:   Sat Nov 16 00:09:13 2019 -0300
+
+    exercecio aula
+
+[33mcommit feccd7c288e4c5102fa3d6a0c17c8a56db0f774e[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mprimeirobranch[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 14 17:51:23 2019 -0300
+
+    feat/exercicio conflito
+
+[33mcommit 26ecb9aa044b7d7e311129b761967a94073f5eda[m
+Merge: 823ef50 e8ed6c4
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 14 10:24:09 2019 -0300
+
+    merge commit
+
+[33mcommit 823ef500bcee162e56bdecc84474a9ccb5600a3c[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 14 10:21:01 2019 -0300
+
+    fix/edited readme exercicio-casa
+
+[33mcommit e8ed6c4b2d74ffd00fae6b0a101b210c3f7bd1f3[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 14 10:21:01 2019 -0300
+
+    fix/edited readme exercicio-casa
+
+[33mcommit 7eadd1dd520c31ea5388f35a13e4271b4cd18bc8[m[33m ([m[1;31morigin/lauraCarvalho[m[33m, [m[1;31morigin/carollbedin[m[33m, [m[1;31morigin/LauraCarvalho[m[33m)[m
+Merge: 5ff6091 3c9c022
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:28:46 2019 -0300
+
+    Merge pull request #12 from reprograma/stelabs
+    
+    Stelabs
+
+[33mcommit 3c9c02200e7f29d154475e16feb6404505c4bc21[m
+Merge: 43bcc64 5ff6091
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:28:16 2019 -0300
+
+    Merge branch 'master' into stelabs
+
+[33mcommit 5ff6091565f9ff7fdb59bb812eccbb3be642b4e2[m
+Merge: 5d7bf37 c4fb70b
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:17:58 2019 -0300
+
+    Merge pull request #13 from reprograma/michellearaujo
+    
+    alterei o nome de usuario
+
+[33mcommit 5d7bf37017d84e98281a013c2fd58632fb94fc90[m
+Merge: 51d515f a924794
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:16:43 2019 -0300
+
+    Merge pull request #11 from reprograma/brunaBetini
+    
+    Edited username github
+
+[33mcommit 51d515fe14f88abb3f522ef634148ff663d94cd1[m
+Merge: a4e51af cb248ae
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:16:27 2019 -0300
+
+    Merge pull request #10 from reprograma/CarolineFerreira
+    
+    edited user name of github
+
+[33mcommit a4e51afb1ecc49bb97b447fea3ae06c5c1eb3cff[m
+Merge: d31d4c5 0da42d7
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:16:09 2019 -0300
+
+    Merge pull request #9 from reprograma/tereza-branch
+    
+    edited username for Tereza
+
+[33mcommit d31d4c518649c985c04d68b23e338306f5487c5a[m
+Merge: 211f74f eedbd56
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:15:35 2019 -0300
+
+    Merge pull request #8 from reprograma/AllanaCaldas
+    
+    edited username
+
+[33mcommit 211f74fcb5608329650f22d17e152b406f906bbd[m
+Merge: 3412b4f 51a1388
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:14:48 2019 -0300
+
+    Merge pull request #7 from reprograma/taysabrina
+    
+    editando o nome no index
+
+[33mcommit 3412b4f7abeea0f38e6c4ddb2409d3f4314828d2[m
+Merge: bd90959 f056040
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 15:11:21 2019 -0300
+
+    Merge pull request #6 from reprograma/ingridRosin
+    
+    edited username
+
+[33mcommit bd90959a3012a419a687ed5482c907846dc54e46[m
+Merge: 3709522 21437b9
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Sat Nov 9 15:01:33 2019 -0300
+
+    edicoes de merge
+
+[33mcommit 3709522e7abfabe66455ac3cc4f48b413fb2c773[m[33m ([m[1;31morigin/Sofia-Santiago[m[33m)[m
+Merge: 9f049a2 b2a29b3
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 14:48:37 2019 -0300
+
+    Merge pull request #4 from reprograma/CarolBedin
+    
+    Carol bedin
+
+[33mcommit 9f049a2cc6cc75a7808991f637455bab08b3efd6[m
+Merge: e1439a2 c8ce5de
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 14:46:37 2019 -0300
+
+    Merge pull request #3 from reprograma/amandagonzaga
+    
+    edited username on github
+
+[33mcommit c4fb70bab99dc850213eb1e5666fbfd881ce2591[m
+Author: Michelle Araujo <michelledearaujo2@gmail.com>
+Date:   Sat Nov 9 14:45:26 2019 -0300
+
+    alterei o nome de usuario
+
+[33mcommit e1439a2c8aa30383488f1f18b770cdda08f4a1c6[m
+Merge: 0f6342d 3d1ec7a
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 14:42:56 2019 -0300
+
+    Merge pull request #2 from reprograma/marcelarechtman
+    
+    editei o nome de usuario do github
+
+[33mcommit 0f6342d321c4d6d16969c93320ea3277d4c6030e[m
+Merge: 5d705b8 c972069
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Sat Nov 9 14:38:11 2019 -0300
+
+    Merge pull request #1 from reprograma/danielleNaomi
+    
+    Danielle naomi
+
+[33mcommit b2a29b3beece68961ba2ad7c67c8149c06d0178a[m
+Author: Carolina Bedin <carollbedin@gmail.com>
+Date:   Sat Nov 9 14:27:10 2019 -0300
+
+    editei nome da ana
+
+[33mcommit cb248ae06cd6236c2aa76c02aa9a0cc6675a975e[m
+Author: carolmalheiros <carolmalheiros.br@gmail.com>
+Date:   Sat Nov 9 14:26:42 2019 -0300
+
+    edited user name of github
+
+[33mcommit 43bcc64df4d38030c6b99561ccbeb49ea540d36f[m
+Author: stelabs <stelabruno0@gmail.com>
+Date:   Sat Nov 9 14:26:29 2019 -0300
+
+    edited text
+
+[33mcommit c97206920bae0a3dd656622eddad17d843c68e79[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Sat Nov 9 14:26:18 2019 -0300
+
+    edited text and border color
+
+[33mcommit 635b0ac4424c30175b4c02f152b66cf8cb2537c5[m
+Author: Carolina Bedin <carollbedin@gmail.com>
+Date:   Sat Nov 9 14:26:05 2019 -0300
+
+    nome da ana
+
+[33mcommit eedbd5661e30e20419321757edbd9b6b11a98123[m
+Author: Allana Caldas <allanacaldas@gmail.com>
+Date:   Sat Nov 9 14:19:35 2019 -0300
+
+    edited username
+
+[33mcommit 51a13888676667a6b681d7b1e6ac564c951322d0[m
+Author: Tay Sabrina <taysabrina.prog@gmail.com>
+Date:   Sat Nov 9 14:18:47 2019 -0300
+
+    editando o nome no index
+
+[33mcommit 0da42d707d0de4116bd17db6a6f078b55f86cd08[m
+Author: Tereza Niederauer <tete.leticia@gmail.com>
+Date:   Sat Nov 9 14:18:37 2019 -0300
+
+    edited username for Tereza
+
+[33mcommit 21437b9cf7fdb03ab3165972a8bd881e675e09e7[m[33m ([m[1;31morigin/fernandaBergoci[m[33m)[m
+Author: Fernanda Bergoci <fernandabergoci@gmail.com>
+Date:   Sat Nov 9 14:18:19 2019 -0300
+
+    editei o nome de usuário do github
+
+[33mcommit f3b05dca1c86b94c1c6e932e7d4258db0c09ea98[m
+Author: stelabs <stelabruno0@gmail.com>
+Date:   Sat Nov 9 14:18:02 2019 -0300
+
+    editei o nome de usuario do github
+
+[33mcommit 3d1ec7a2173f7160e72b402c8917259afd2bc140[m
+Author: “MarcelaRecht$ git config --global user.name “MarcelaRecht <matz.marcela@gmail.com>
+Date:   Sat Nov 9 14:17:57 2019 -0300
+
+    editei o nome de usuario do github
+
+[33mcommit a9247940ced6cdbca2e65de87f569fabb7daa29f[m
+Author: Bruna Betini <bruna.betini@yahoo.com.br>
+Date:   Sat Nov 9 14:17:52 2019 -0300
+
+    edited username github
+
+[33mcommit c8ce5dee19d7c544ddd6bfa5e93ffaa57d89441b[m
+Author: Amanda Gonzaga <amandagonzaga.s@gmail.com>
+Date:   Sat Nov 9 14:17:47 2019 -0300
+
+    edited username on github
+
+[33mcommit f056040fe3a9b1c3ca6434ab0344c7deb7a5e4ce[m
+Author: Ingrid Rosin <ingrid.rosin@gmail.com>
+Date:   Sat Nov 9 14:17:45 2019 -0300
+
+    edited username
+
+[33mcommit b8e7bc9ab6b1d3f4edc79741393771e0d5125578[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Sat Nov 9 14:17:44 2019 -0300
+
+    editei o nome de usuario do github
+
+[33mcommit 8cfce60a96ff2430fd89dee4923b0f1792e93755[m
+Author: Carolina Bedin <carollbedin@gmail.com>
+Date:   Sat Nov 9 14:17:43 2019 -0300
+
+    edited username
+
+[33mcommit 5d705b8a564081bbdf88a78b5364c8067b0798a4[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Sat Nov 9 08:15:13 2019 -0300
+
+    feat/add prompt commands
+
+[33mcommit 8af43e57917c3dda15e21c899f4d1a4f818e65ee[m
+Merge: 45674cd b4de4d2
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 19:52:24 2019 -0300
+
+    Merge branch 'master' of https://github.com/reprograma/On2-git-e-github
+
+[33mcommit 45674cd865a8e0968ff130c86ea15a5d80ebe83f[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 19:51:45 2019 -0300
+
+    fix/edit extra
+
+[33mcommit b4de4d26111b6625256313c5ecd63904ac168860[m
+Author: Danielle Nakatsu <32687551+daninaomi@users.noreply.github.com>
+Date:   Fri Nov 8 19:46:51 2019 -0300
+
+    delete ds store
+
+[33mcommit 65840b76b75cdc532b5b5cf084fe38368632b9a2[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 19:44:56 2019 -0300
+
+    feat/exercicio aula
+
+[33mcommit cd68593fa675a1694ebec15eeef17d4d273aa5f8[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 19:20:59 2019 -0300
+
+    fix/fix img
+
+[33mcommit 4b745e17a912eaeccc2b6d1139f310dc90319166[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 18:13:44 2019 -0300
+
+    feat/added more details to readme
+
+[33mcommit 08eae63602ad932a7bff01f33892234b1e6471d1[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 14:36:37 2019 -0300
+
+    feat/add vim tip
+
+[33mcommit ffd680008ebda2f2f0dc31127fa8a147e0cc1e99[m
+Merge: eec04c1 93ca686
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 14:28:13 2019 -0300
+
+    pull
+
+[33mcommit eec04c1b14d1187502b24d471289593a23461af0[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Fri Nov 8 14:11:11 2019 -0300
+
+    feat/add html css exercicio casa
+
+[33mcommit 93ca6868d60ab95517501967af84079ebc0aeefd[m
+Merge: 8593526 6c572f6
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 22:53:08 2019 -0300
+
+    merge
+
+[33mcommit 8593526c47b06c890183a429fd9d1e81c8210d43[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 22:32:52 2019 -0300
+
+    fix/readme fixes
+
+[33mcommit 6c572f6b2adf7c41ee586585a8b6fe26be1f320f[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 22:32:52 2019 -0300
+
+    fix/readme fixes
+
+[33mcommit 2f14273d9a6e7a50965b64c3d7510ba13aa470c8[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 22:20:00 2019 -0300
+
+    feat/readme changes
+
+[33mcommit 1f339055b387860211677a022efb2951c8f95856[m
+Merge: 4729e7c 8dc3805
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 22:09:19 2019 -0300
+
+    merge changes
+
+[33mcommit 4729e7c2b3a1c869755583c58df193be45692301[m
+Merge: 55b48c0 23c55b6
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 21:55:15 2019 -0300
+
+    readme changes
+
+[33mcommit 8dc3805546205d97c08c5114f1e526746663919e[m
+Merge: d9ab887 c8a550d
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 7 18:47:14 2019 -0300
+
+    feat/readme changes
+
+[33mcommit d9ab887e31800891759c87cce554370329104113[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 7 18:42:49 2019 -0300
+
+    feat/new imgs and readme changes
+
+[33mcommit c8a550d16241b3df7f5906fad2b4fd65637f1932[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 7 18:42:49 2019 -0300
+
+    feat/new imgs and readme changes
+
+[33mcommit 55b48c026abecff5ca50ece5e941419f71b10899[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 15:09:52 2019 -0300
+
+    feat/added imgs and changed readme
+
+[33mcommit 23c55b698c217b9a20e16137ebfb64a30d7fc61e[m
+Author: daninaomi <daninaomi93@gmail.com>
+Date:   Thu Nov 7 15:09:52 2019 -0300
+
+    feat/added imgs and changed readme
+
+[33mcommit 1ff0e460f637fd1598a5763b6d497afb71a9698f[m
+Author: Dani Nakatsu <danielle.n.nakatsu@accenture.com>
+Date:   Thu Nov 7 10:47:16 2019 -0300
+
+    feat/readme
